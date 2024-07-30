@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import models.archs.arch_util as arch_util
-from models.attentions import simam_module
+from models.attentions import smam_module
 
 
 
@@ -81,7 +81,7 @@ class SEM(nn.Module):
                 bias=False)
         )
         # self.PAConv = PAConv(group_width)
-        self.SIMAM = simam_module(group_width, e_lambda=1e-4)
+        self.SMAM = smam_module(group_width, e_lambda=1e-4)
 
         self.MWFE = MWFE(in_channel=group_width * reduction, r=0.5)
 
@@ -101,7 +101,7 @@ class SEM(nn.Module):
 
         out_b = self.conv1_b(x)
         out_b = self.lrelu(out_b)
-        out_b = self.SIMAM(out_b)
+        out_b = self.SMAM(out_b)
         out_b = self.k2(out_b)
         out_b = self.lrelu(out_b)
 
