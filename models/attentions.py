@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 
 
-class simam_module(torch.nn.Module):
+class smam_module(torch.nn.Module):
     def __init__(self, nf, e_lambda=1e-4, kernel_size = 3):
-        super(simam_module, self).__init__()
+        super(smam_module, self).__init__()
 
         self.activaton = nn.Sigmoid()
         self.e_lambda = e_lambda
