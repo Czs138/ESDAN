@@ -12,8 +12,8 @@ datasets:
   train:
     name: DF2K
     mode: LQGT
-    dataroot_GT: ..\datasets\train\HR
-    dataroot_LQ: ..\datasets\train\HR
+    dataroot_GT: ../datasets/train/HR
+    dataroot_LQ: ../datasets/train/HR
     
     use_shuffle: true
     n_workers: 6  # per GPU
