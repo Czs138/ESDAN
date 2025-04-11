@@ -45,6 +45,17 @@ python train.py -opt options/train/train_PANx4.yml
 ```
 4. More training commond can be found in `./codes/run_scripts.sh` file.
 
+## Code Availability
+The code for this project is currently being prepared for release. We are in the process of finalizing the manuscript and will make the code publicly available upon acceptance of the paper.
+
+## Contact   
+For any inquiries or collaboration opportunities, please contact the author, Chuanhao Zhang, at zhangchuanhao981@outlook.com.
+
+## Acknowledgements   
+We would like to thank all the contributors and supporters of this project.
+
+
+
 
 
 
